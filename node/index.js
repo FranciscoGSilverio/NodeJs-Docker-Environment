@@ -1,7 +1,10 @@
 const express = require("express");
+const setupDb = require("./db/mysql");
 
 const app = express();
 const PORT = 3000;
+
+setupDb();
 
 app.use(express.json());
 
